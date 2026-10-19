@@ -1,0 +1,12 @@
+{
+  "name": "firedrill",
+  "version": "1.0.0",
+  "description": "Explore agent behavior with Firedrill simulations, synthetic dependencies, and saved evidence. Free to use; account authorization required.",
+  "author": { "name": "Firedrill", "email": "support@firedrill.run" },
+  "homepage": "https://firedrill.run/agents",
+  "repository": "https://github.com/firedrill-tools/firedrill-plugin",
+  "license": "MIT",
+  "keywords": ["firedrill", "agent-simulation", "agent-testing", "evaluation"],
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json"
+}
