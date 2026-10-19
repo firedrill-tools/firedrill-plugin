@@ -56,6 +56,17 @@ Use `/mcp-config login firedrill` to complete browser sign-in when prompted.
 Review and approve the intended Firedrill organization; never paste a token into
 chat. Direct installation is separate from Kimi's curated marketplace approval.
 
+For Kiro, open **Powers → Add Custom Power → Import power from GitHub** and use:
+
+```text
+https://github.com/firedrill-tools/firedrill-plugin/tree/main/kiro
+```
+
+The `kiro/` power uses the Agent Plugins format. Its Streamable HTTP manifest
+is separate from the other hosts' configuration formats.
+Review the remote connection and complete Kiro's MCP browser authorization.
+Direct import does not mean the power has been accepted into Kiro's registry.
+
 After installation, use your host's native MCP sign-in action and approve the
 intended Firedrill organization in the browser. The host stores OAuth credentials;
 no key belongs in this repository or in the agent's conversation.
