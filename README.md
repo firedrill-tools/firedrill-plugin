@@ -1,8 +1,9 @@
 # Firedrill plugin
 
-Connect your coding agent to [Firedrill](https://firedrill.run/agents), the
-simulation lab for coding agents. Explore application behavior, run useful
-scenarios, and inspect saved evidence. Testing and assessment are optional;
+Connect your coding agent to [Firedrill](https://firedrill.run/agents), a
+simulation platform for AI agents. Your coding agent can prepare and operate
+simulations of the AI agent you're building on your behalf. Explore its behavior,
+run useful scenarios, and inspect saved evidence. Testing and assessment are optional;
 observation and demonstrations are valid simulations too.
 
 **Firedrill is free to use.** Your application's model and runner costs remain
