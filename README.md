@@ -67,6 +67,13 @@ is separate from the other hosts' configuration formats.
 Review the remote connection and complete Kiro's MCP browser authorization.
 Direct import does not mean the power has been accepted into Kiro's registry.
 
+For OpenCode, merge the native remote entry in
+[`opencode/opencode.json`](./opencode/opencode.json) into your application's
+configuration, then run `opencode mcp auth firedrill` from that application
+directory. The [OpenCode guide](./opencode/README.md) includes safe setup,
+optional skills, inspection and removal. This uses OpenCode's native remote
+support, not an executable hook plugin.
+
 After installation, use your host's native MCP sign-in action and approve the
 intended Firedrill organization in the browser. The host stores OAuth credentials;
 no key belongs in this repository or in the agent's conversation.
