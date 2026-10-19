@@ -32,6 +32,19 @@ Install the plugin using your host's plugin installation flow. Cursor reads
 `.grok-plugin/plugin.json` and `.mcp.json`. Marketplace approval is separate
 from this public source repository; do not assume a listing exists yet.
 
+For Claude Code, use its native plugin manager:
+
+```sh
+claude plugin install firedrill --marketplace firedrill-tools/firedrill-plugin
+```
+
+This installs the remote connector and simulation skill together. To keep the
+installation specific to the current project, append `--scope project`.
+Restart Claude Code, open `/mcp`, and use its native sign-in action for the
+Firedrill connection. Review the intended organization in the browser.
+Installation does not authorize an account, approve tool calls, or run a
+simulation. Direct installation is separate from Anthropic directory approval.
+
 For Gemini CLI, use its native extension manager:
 
 ```sh

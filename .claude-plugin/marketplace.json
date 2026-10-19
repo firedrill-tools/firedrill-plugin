@@ -1,0 +1,17 @@
+{
+  "name": "firedrill",
+  "description": "Firedrill's thin remote connector and simulation skill for AI-agent workflows.",
+  "owner": {
+    "name": "Firedrill",
+    "email": "support@firedrill.run"
+  },
+  "plugins": [
+    {
+      "name": "firedrill",
+      "source": "./",
+      "description": "Simulate AI agents through Firedrill's remote MCP connection and simulation skill.",
+      "category": "development",
+      "tags": ["agent-simulation", "agent-testing", "evaluation", "mcp"]
+    }
+  ]
+}
