@@ -32,6 +32,18 @@ Install the plugin using your host's plugin installation flow. Cursor reads
 `.grok-plugin/plugin.json` and `.mcp.json`. Marketplace approval is separate
 from this public source repository; do not assume a listing exists yet.
 
+For Gemini CLI, use its native extension manager:
+
+```sh
+gemini extensions install https://github.com/firedrill-tools/firedrill-plugin
+```
+
+Review the extension's remote MCP connection before confirming. Reload Gemini
+CLI, then use `/mcp auth firedrill` to complete browser authorization. The extension
+uses Streamable HTTP and includes the simulation skill; it has no executable,
+install hook, bundled credential, or blanket tool-approval rule. Gallery indexing
+is separate from direct installation and is not guaranteed by this command.
+
 After installation, use your host's native MCP sign-in action and approve the
 intended Firedrill organization in the browser. The host stores OAuth credentials;
 no key belongs in this repository or in the agent's conversation.

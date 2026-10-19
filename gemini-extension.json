@@ -1,0 +1,10 @@
+{
+  "name": "firedrill",
+  "version": "1.0.0",
+  "description": "Simulate AI agents with Firedrill. Prepare scenarios, synthetic tools and data, and inspect saved evidence on the user's behalf. Free to use; browser authorization required.",
+  "mcpServers": {
+    "firedrill": {
+      "httpUrl": "https://mcp.firedrill.run/mcp"
+    }
+  }
+}
