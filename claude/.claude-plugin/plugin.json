@@ -1,7 +1,7 @@
 {
   "name": "firedrill",
   "displayName": "Firedrill",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simulate AI agents with controlled dependencies, useful scenarios and saved evidence through Firedrill's remote MCP connection.",
   "author": {
     "name": "Firedrill",
@@ -9,6 +9,8 @@
     "url": "https://firedrill.run"
   },
   "homepage": "https://firedrill.run/agents",
+  "privacyPolicyUrl": "https://firedrill.run/privacy",
+  "icon": "./.claude-plugin/icon.png",
   "repository": "https://github.com/firedrill-tools/firedrill-plugin",
   "license": "MIT",
   "keywords": ["firedrill", "agent-simulation", "agent-testing", "simulation-evidence"]

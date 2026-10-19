@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "firedrill",
-      "source": "./",
+      "source": "./claude",
       "description": "Simulate AI agents through Firedrill's remote MCP connection and simulation skill.",
       "category": "development",
       "tags": ["agent-simulation", "agent-testing", "evaluation", "mcp"]
