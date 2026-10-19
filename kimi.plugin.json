@@ -1,0 +1,20 @@
+{
+  "name": "firedrill",
+  "version": "1.0.0",
+  "description": "Simulate AI agents with Firedrill. Coding agents prepare scenarios, synthetic dependencies and saved evidence on your behalf. Free to use; browser authorization required.",
+  "homepage": "https://firedrill.run/agents",
+  "license": "MIT",
+  "keywords": ["firedrill", "agent-simulation", "agent-testing", "evaluation"],
+  "interface": {
+    "displayName": "Firedrill",
+    "shortDescription": "Simulate AI agents and inspect saved evidence",
+    "developerName": "Firedrill",
+    "websiteURL": "https://firedrill.run/agents"
+  },
+  "skills": "./skills/",
+  "mcpServers": {
+    "firedrill": {
+      "url": "https://mcp.firedrill.run/mcp"
+    }
+  }
+}

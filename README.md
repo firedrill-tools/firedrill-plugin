@@ -44,6 +44,18 @@ uses Streamable HTTP and includes the simulation skill; it has no executable,
 install hook, bundled credential, or blanket tool-approval rule. Gallery indexing
 is separate from direct installation and is not guaranteed by this command.
 
+For Kimi Code, use its native plugin manager:
+
+```text
+/plugins install https://github.com/firedrill-tools/firedrill-plugin
+/reload
+```
+
+The plugin declares one remote MCP connection and the same simulation skill.
+Use `/mcp-config login firedrill` to complete browser sign-in when prompted.
+Review and approve the intended Firedrill organization; never paste a token into
+chat. Direct installation is separate from Kimi's curated marketplace approval.
+
 After installation, use your host's native MCP sign-in action and approve the
 intended Firedrill organization in the browser. The host stores OAuth credentials;
 no key belongs in this repository or in the agent's conversation.
