@@ -3,7 +3,7 @@
   "mcp": {
     "firedrill": {
       "type": "remote",
-      "url": "https://mcp.firedrill.run/mcp",
+      "url": "https://mcp.firedrill.run",
       "enabled": true
     }
   }

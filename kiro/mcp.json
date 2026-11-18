@@ -3,7 +3,7 @@
   "mcpServers": {
     "firedrill": {
       "type": "streamable-http",
-      "url": "https://mcp.firedrill.run/mcp"
+      "url": "https://mcp.firedrill.run"
     }
   }
 }

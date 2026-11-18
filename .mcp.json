@@ -2,7 +2,7 @@
   "mcpServers": {
     "firedrill": {
       "type": "http",
-      "url": "https://mcp.firedrill.run/mcp"
+      "url": "https://mcp.firedrill.run"
     }
   }
 }
