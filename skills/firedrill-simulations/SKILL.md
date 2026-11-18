@@ -15,6 +15,12 @@ Human consent authorizes the intended organization; do not request pasted tokens
 read environment secrets, or reuse credentials from another organization. Inspect
 current project/environment context and discover the available tools and schemas.
 
+If the user has no workspace, direct them to the
+[Firedrill web app](https://app.firedrill.run/signin) to finish workspace setup.
+If a workspace request is already pending, keep that original request and have
+the user check its status there. Then use the same organization in the CLI and
+MCP sign-ins.
+
 Match the simulation to the user's question. Observation needs no grading;
 evaluation may use semantic scoring for valid output variation and exact checks
 for hard constraints. Propose realistic situations grounded in the application,
