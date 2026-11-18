@@ -1,6 +1,6 @@
 {
   "name": "firedrill",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simulate AI agents with Firedrill. Coding agents prepare scenarios, synthetic dependencies and saved evidence on your behalf. Free to use; browser authorization required.",
   "homepage": "https://firedrill.run/agents",
   "license": "MIT",
@@ -14,7 +14,7 @@
   "skills": "./skills/",
   "mcpServers": {
     "firedrill": {
-      "url": "https://mcp.firedrill.run/mcp"
+      "url": "https://mcp.firedrill.run"
     }
   }
 }

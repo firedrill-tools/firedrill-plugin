@@ -11,6 +11,10 @@ separate. An account and human authorization are required.
 
 ## Connect
 
+If you're new to Firedrill, [sign in to the web app](https://app.firedrill.run/signin)
+and create or choose a workspace first. Use that workspace's organization
+when authorizing the MCP connection.
+
 This repository contains a remote MCP connector and one simulation skill.
 It does not install or run a local MCP server, application, or shell hook.
 
@@ -21,7 +25,7 @@ The remote connection is:
   "mcpServers": {
     "firedrill": {
       "type": "http",
-      "url": "https://mcp.firedrill.run/mcp"
+      "url": "https://mcp.firedrill.run"
     }
   }
 }
@@ -99,7 +103,7 @@ Try asking:
 
 Remote MCP can prepare simulations, manage authorized synthetic dependencies,
 and inspect reports. It cannot execute your local repository. To run your actual
-application, use an authorized customer-owned CLI or SDK runner. The short CLI
+application locally, use the Firedrill CLI. The short CLI
 setup command, run from the application's repository, is:
 
 ```sh
@@ -107,21 +111,19 @@ npx firedrill-run init
 ```
 
 CLI sign-in is separate from the MCP host's OAuth session. Choose the same
-intended organization. CI uses its supported noninteractive credential, not an
-interactive browser prompt. [Read the setup guide](https://firedrill.run/agents)
-and [documentation](https://docs.firedrill.run/).
+intended organization. [Read the setup guide](https://docs.firedrill.run/agents/setup).
 
 ## Data and permissions
 
-The connector uses `https://mcp.firedrill.run/mcp`. OAuth metadata directs your
+The connector uses `https://mcp.firedrill.run`. OAuth metadata directs your
 host to Firedrill's WorkOS-backed authorization service. No static credentials,
 environment-file readers, telemetry scripts, lifecycle hooks, binaries, or
 runtime dependencies are included in this plugin.
 
 Actions through the connection access the selected Firedrill account,
 organization, project and environment. Publish source/data or start simulations
-only within the user's authorization. Your application stays on your laptop,
-in CI, or at its existing execution seam. Review Firedrill's
+only within the user's authorization. Local execution stays on your machine.
+Review Firedrill's
 [privacy policy](https://firedrill.run/privacy) and
 [terms](https://firedrill.run/terms).
 

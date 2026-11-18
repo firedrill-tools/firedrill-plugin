@@ -1,6 +1,6 @@
 {
   "name": "firedrill",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Explore agent behavior with Firedrill simulations, synthetic dependencies, and saved evidence. Free to use; account authorization required.",
   "author": { "name": "Firedrill", "email": "support@firedrill.run" },
   "homepage": "https://firedrill.run/agents",

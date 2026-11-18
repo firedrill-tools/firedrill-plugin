@@ -6,6 +6,9 @@ prepare useful scenarios and controlled dependencies, and review retained report
 and evidence. Observation, demonstrations, comparisons and testing are valid
 simulation goals; assessment is optional.
 
+If you're new to Firedrill, [sign in to the web app](https://app.firedrill.run/signin)
+and create or choose a workspace first.
+
 This plugin includes one remote MCP connection and one simulation skill. It
 contains no local server, executable, lifecycle hook, package-install script,
 credential or telemetry script. Install with Claude Code's native plugin manager:
@@ -22,16 +25,15 @@ OAuth credentials; never paste credentials into chat.
 Try asking Claude to inspect the agent you are building, propose a small set of
 useful scenarios, and show the saved report from one real simulation.
 
-The MCP connection prepares and inspects simulations; your application executes
-through an authorized customer-owned CLI or SDK runner on your laptop, in CI,
-or through its existing execution seam. Publishing source or data and starting
+The MCP connection prepares and inspects simulations; run your actual application
+locally using the Firedrill CLI. Publishing source or data and starting
 work require your authorization. Keep live vendor credentials and real external
 side effects outside synthetic simulations unless you deliberately authorize them.
 
 **Firedrill is free to use.** Your application's model and runner costs remain
 separate. An account and human authorization are required.
 
-The connection uses `https://mcp.firedrill.run/mcp`, whose OAuth metadata directs
+The connection uses `https://mcp.firedrill.run`, whose OAuth metadata directs
 your host to Firedrill's WorkOS-backed authorization service. Actions are scoped
 to the selected account, organization, project and environment. The content sent
 depends on the operations you authorize, including recipes, selected data,

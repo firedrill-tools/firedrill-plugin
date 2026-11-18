@@ -7,6 +7,9 @@ being simulated.
 
 ## Connect
 
+If you're new to Firedrill, [sign in to the web app](https://app.firedrill.run/signin)
+and create or choose a workspace first.
+
 Merge the `mcp.firedrill` entry from [opencode.json](./opencode.json) into your
 application's `opencode.json` or `opencode.jsonc`. Preserve existing settings and
 other servers; do not replace your entire configuration.
@@ -17,7 +20,7 @@ other servers; do not replace your entire configuration.
   "mcp": {
     "firedrill": {
       "type": "remote",
-      "url": "https://mcp.firedrill.run/mcp",
+      "url": "https://mcp.firedrill.run",
       "enabled": true
     }
   }
@@ -31,8 +34,8 @@ opencode mcp auth firedrill
 opencode mcp list
 ```
 
-The first command opens browser OAuth authorization. Sign in or create your
-Firedrill account, then approve the intended organization. Do not paste an access
+The first command opens browser OAuth authorization. Approve the organization
+that owns your Firedrill workspace. Do not paste an access
 token into the conversation or configuration. OpenCode stores the credential;
 no API key, executable adapter, or local MCP process is needed.
 If the connection is not available, `opencode mcp debug firedrill` diagnoses

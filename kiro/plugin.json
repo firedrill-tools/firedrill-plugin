@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "firedrill",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simulate AI agents with Firedrill. Prepare scenarios and synthetic dependencies, explore behavior and inspect saved evidence through remote MCP. Free to use; account authorization required.",
   "author": {
     "name": "Firedrill",
