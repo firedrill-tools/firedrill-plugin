@@ -64,17 +64,18 @@ Then ask OpenCode:
 
 Remote MCP can prepare scenarios, configure authorized synthetic dependencies,
 and inspect retained results. It cannot launch a local application by itself.
-Run `npx firedrill-run init` from your application's repository to configure a
-customer-owned CLI runner, or use the supported SDK at your existing execution
-seam. CLI authorization is separate; select the same intended organization.
-Your target application and model credentials remain yours.
+Run `npx firedrill-run init` from your application's repository to set up the
+Firedrill CLI. CLI authorization is separate; select the same intended
+organization. For a new drill, use `plan`, `apply` and `run` after reviewing
+the [quickstart](https://docs.firedrill.run/quickstart). Approve the exact local
+plan before execution. Do not upload the target's source or credentials.
 
 Simulations can be exploratory, observation-only, demonstrations, comparisons,
 or tests. Exact checks suit hard constraints; semantic assessments allow valid
-output variation. Always distinguish execution, observed outcome, assessment,
-and an optional CI gate.
+output variation. Always distinguish execution, observed outcome and assessment.
+This connector does not provide a managed CI runner.
 
-Firedrill is free to use; target-model and runner costs remain separate. This
+You can start on Firedrill's Free plan; target-model costs remain separate. This
 directory contains public connector configuration and documentation only, under
 the repository's thin-plugin MIT license. Firedrill's service remains closed
 source. No hook, automatic trust rule, model provider, or credential is bundled.

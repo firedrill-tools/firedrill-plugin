@@ -12,11 +12,11 @@ for the intended Firedrill organization. No token or model key belongs in chat.
 This power declares one Streamable HTTP remote and contains no executable,
 install hook, bundled credential or automatic tool-approval rule.
 
-Firedrill is free to use; your application's model and runner costs are separate.
+You can start on Firedrill's Free plan; your application's model costs are separate.
 The remote connector prepares simulations and inspects reports. Execution of
-your application uses your separately authorized CLI or SDK runner, not Kiro's
-remote MCP connection alone. See [agent setup](https://firedrill.run/agents)
-and [documentation](https://docs.firedrill.run/).
+your application uses the separately authorized Firedrill CLI on your machine.
+See the [quickstart](https://docs.firedrill.run/quickstart) for the
+`plan`, `apply` and `run` workflow and exact local-plan approval.
 
 Direct import is separate from acceptance into Kiro's curated registry.
 
