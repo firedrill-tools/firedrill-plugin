@@ -1,6 +1,6 @@
 ---
 name: firedrill-simulations
-description: Use Firedrill to explore or test an AI agent or application through simulations, controlled dependencies, and retained reports. Supports observation, demonstrations, behavioral evaluation and CI.
+description: Use Firedrill to explore or evaluate an AI agent or agentic application with synthetic dependencies, locally executed drills and saved reports.
 ---
 
 # Firedrill simulations
@@ -28,26 +28,29 @@ not thousands of renamed copies of the same input. Declare the proposed target,
 cases, repetitions and dependency/reset boundaries before execution.
 
 Remote MCP prepares and inspects work; it does not launch the user's repository.
-Use an authorized customer-owned CLI/SDK runner for real target execution. If no
-runner is available, provide `npx firedrill-run init` as the CLI setup command
-and explain the handoff. Do not install packages, change host trust or start
-target work merely because the plugin was installed. Use existing client help
-and [official documentation](https://docs.firedrill.run/) for the current recipe
-and invocation contract instead of inventing fields or commands.
+Use the separately authorized Firedrill CLI to run the target on the user's
+machine. If the CLI is not set up, point the user to `npx firedrill-run init`.
+Use `plan`, `apply` and `run` for new drills; get human approval for the exact
+local commands before they start. This plugin does not provide managed CI.
+Use installed CLI help and the [quickstart](https://docs.firedrill.run/quickstart)
+for the current contract. Do not install packages or change host trust merely
+because the plugin was installed.
 
 Select only needed synthetic dependencies and explicitly authorized data.
 Keep live vendor credentials and external side effects out of a simulation unless
 the user deliberately authorizes them. Resetting Firedrill Tools does not reset
 the application's database, process memory, external services or LLM randomness.
 Never silently fall back to live production services.
+Register the target with metadata only; do not upload its source or credentials.
 
 Reconcile an uncertain operation using its retained recovery handle before
 retrying. Queued work, setup success and manual Tool probes are not proof that
-the target ran. Keep execution, observed outcome, assessment and optional CI gate
-distinct; an evaluator error is not an agent failure and a score is not a
+the target ran. Keep execution, observed outcome and assessment distinct;
+an evaluator error is not an agent failure and a score is not a
 calibrated probability. Never fabricate screenshots, Tool calls, scores or runs.
 
 Finish with the retained report link, important observations, evidence gaps and
 next action. For repetitions or comparisons, show distributions and meaningful
 failure/interruption/unknown counts, not a cherry-picked score. Preserve the
-recipe and recovery handles for reuse or CI within the existing repository.
+the cloud resource IDs and original request keys for recovery. Do not publish
+credentials, target input or customer evidence in the repository.

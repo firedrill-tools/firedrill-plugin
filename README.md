@@ -6,7 +6,7 @@ simulations of the AI agent you're building on your behalf. Explore its behavior
 run useful scenarios, and inspect saved evidence. Testing and assessment are optional;
 observation and demonstrations are valid simulations too.
 
-**Firedrill is free to use.** Your application's model and runner costs remain
+**You can start on Firedrill's Free plan.** Your application's model costs remain
 separate. An account and human authorization are required.
 
 ## Connect
@@ -36,7 +36,7 @@ Install the plugin using your host's plugin installation flow. Cursor reads
 `.grok-plugin/plugin.json` and `.mcp.json`. Marketplace approval is separate
 from this public source repository; do not assume a listing exists yet.
 
-For Claude Code, use its native plugin manager:
+For Claude Code v2.1.292 or later, use its native plugin manager:
 
 ```sh
 claude plugin install firedrill --marketplace firedrill-tools/firedrill-plugin
@@ -44,6 +44,12 @@ claude plugin install firedrill --marketplace firedrill-tools/firedrill-plugin
 
 This installs the remote connector and simulation skill together. To keep the
 installation specific to the current project, append `--scope project`.
+On older versions, use these two commands:
+
+```sh
+claude plugin marketplace add firedrill-tools/firedrill-plugin
+claude plugin install firedrill@firedrill --scope project
+```
 Restart Claude Code, open `/mcp`, and use its native sign-in action for the
 Firedrill connection. Review the intended organization in the browser.
 Installation does not authorize an account, approve tool calls, or run a
@@ -111,7 +117,9 @@ npx firedrill-run init
 ```
 
 CLI sign-in is separate from the MCP host's OAuth session. Choose the same
-intended organization. [Read the setup guide](https://docs.firedrill.run/agents/setup).
+intended organization. For a new drill, use the CLI's `plan`, `apply` and `run`
+flow. The person reviews the exact local plan before it runs. This connector
+does not provide a managed CI runner. [Read the quickstart](https://docs.firedrill.run/quickstart).
 
 ## Data and permissions
 
@@ -120,9 +128,10 @@ host to Firedrill's WorkOS-backed authorization service. No static credentials,
 environment-file readers, telemetry scripts, lifecycle hooks, binaries, or
 runtime dependencies are included in this plugin.
 
-Actions through the connection access the selected Firedrill account,
-organization, project and environment. Publish source/data or start simulations
-only within the user's authorization. Local execution stays on your machine.
+Actions through the connection are scoped to the chosen organization and
+workspace. Register the target with a metadata-only descriptor; never upload
+its source or credentials. A separately approved custom tool upload contains
+only that tool's package and synthetic seed. Local execution stays on your machine.
 Review Firedrill's
 [privacy policy](https://firedrill.run/privacy) and
 [terms](https://firedrill.run/terms).

@@ -11,10 +11,17 @@ and create or choose a workspace first.
 
 This plugin includes one remote MCP connection and one simulation skill. It
 contains no local server, executable, lifecycle hook, package-install script,
-credential or telemetry script. Install with Claude Code's native plugin manager:
+credential or telemetry script. Install with Claude Code v2.1.292 or later:
 
 ```sh
 claude plugin install firedrill --marketplace firedrill-tools/firedrill-plugin
+```
+
+On older versions, use these two commands:
+
+```sh
+claude plugin marketplace add firedrill-tools/firedrill-plugin
+claude plugin install firedrill@firedrill --scope project
 ```
 
 Restart Claude Code, open `/mcp`, and use the native sign-in action for Firedrill.
@@ -25,10 +32,11 @@ OAuth credentials; never paste credentials into chat.
 Try asking Claude to inspect the agent you are building, propose a small set of
 useful scenarios, and show the saved report from one real simulation.
 
-The MCP connection prepares and inspects simulations; run your actual application
-locally using the Firedrill CLI. Publishing source or data and starting
-work require your authorization. Keep live vendor credentials and real external
-side effects outside synthetic simulations unless you deliberately authorize them.
+The MCP connection prepares and inspects simulations. Use the Firedrill CLI's
+`plan`, `apply` and `run` flow and approve the exact local plan before running.
+The target application's source and credentials stay out of its descriptor.
+Keep live vendor credentials and real external side effects outside synthetic
+simulations unless you deliberately authorize them.
 
 **Firedrill is free to use.** Your application's model and runner costs remain
 separate. An account and human authorization are required.
