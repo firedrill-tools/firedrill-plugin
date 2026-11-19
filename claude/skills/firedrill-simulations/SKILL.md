@@ -51,6 +51,6 @@ calibrated probability. Never fabricate screenshots, Tool calls, scores or runs.
 
 Finish with the retained report link, important observations, evidence gaps and
 next action. For repetitions or comparisons, show distributions and meaningful
-failure/interruption/unknown counts, not a cherry-picked score. Preserve the
+failure/interruption/unknown counts, not a cherry-picked score. Preserve
 the cloud resource IDs and original request keys for recovery. Do not publish
 credentials, target input or customer evidence in the repository.
